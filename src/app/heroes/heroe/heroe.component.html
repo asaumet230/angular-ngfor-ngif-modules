@@ -1,0 +1,42 @@
+<h1 class="titulo">{{nombre}}</h1>
+
+<table class="tabla">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Edad
+            </th>
+            <th>
+                Función
+            </th>
+            <th>
+                Nombre Capitalizado
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {{nombre}}
+            </td>
+            <td>
+                {{edad}}
+            </td>
+            <td>
+                {{obtenerDatos()}}
+            </td>
+            <td>
+                {{nombreCapitalizado}}
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+<div class="div-btn">
+    <button (click)="cambiarNombre()">Cambiar heroe </button>
+    <button (click)="cambiarEdad()">Cambiar Edad</button>
+</div>
