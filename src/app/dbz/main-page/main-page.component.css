@@ -1,0 +1,19 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+.col {
+  text-align: center;
+}
+.input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: fit-content;
+  margin: 0 auto;
+}
