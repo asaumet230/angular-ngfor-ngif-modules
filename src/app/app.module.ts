@@ -6,9 +6,6 @@ import { ContadorModule } from './contador/contador.module';
 import { DbzModule } from './dbz/dbz.module';
 
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent

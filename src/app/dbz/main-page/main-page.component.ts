@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {Personaje} from '../interfaces/dbz.interfaces'
 
 
 @Component({
@@ -9,35 +8,27 @@ import {Personaje} from '../interfaces/dbz.interfaces'
 })
 export class MainPageComponent {
 
-  public personajes: Personaje[]=[
-    {nombre: 'Pikoro', poder: 9000},
-    {nombre: 'TenShin Han', poder:7000}
-  ];
+  /* Todos lo qu esta en forma de texto
+   * es la manera de traer el arreglo de personajes
+   * al mainpage*/
 
+  //public personajes: Personaje[]=[];
+
+  /*
   public nuevo:Personaje={
     nombre: '',
     poder: 0
   };
 
-  public mensaje: string = '';
+  //get personajes(): Personaje[]{
+    //return this.DbzService.personajes;
+  //}
+
+  constructor(){
+    //this.personajes = this.DbzService.personajes;
+  }
   
-  agregar(): void{
-   // e.preventDefault(); Angular tiene funcionalidades integradas de formulario que
-   // no ocupan enviar eventos
-   if(this.nuevo.nombre.trim().length === 0 || this.nuevo.poder === 0){
-     this.mensajeValidacion();
-     return;
-   } 
-
-   this.personajes.push(this.nuevo);
-   this.nuevo ={nombre:'', poder: 0};
-    //console.log(this.nuevo);
-  }
-  mensajeValidacion(): void{
-    this.mensaje= 'Debes agregar un personaje';
-
-    setTimeout(() => {
-      this.mensaje = '';
-    }, 3000);
-  }
+  /*agregarNuevoPersonaje(personaje: Personaje){
+    this.personajes.push(personaje);
+  }*/
 }
